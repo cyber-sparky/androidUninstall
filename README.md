@@ -39,6 +39,10 @@ If nothing work go for METHOD #2
 - Go to Setting > Apps > blockerhero > Remove admin access > Uninstall app
 - Reboot - You’ll be come to Normal Mode
 
+When you granted BlockerHero “Device admin” access, Android created a set of policies in its DevicePolicyManager (stored in `/data/system/device_policies.xml`) that prevent normal users (and even Safe Mode) from removing or disabling the app’s admin component.  What you did in Safe Mode was:
+
+1. Safe Mode temporarily disabled *all third-party apps*, so you could go into Settings → Device admin apps and toggle BlockerHero **off**.
+2. Once its admin bit was turned off, you could uninstall it normally.
 ---
 
 My friend never Uninstalled that app since he payed for that.
