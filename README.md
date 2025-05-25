@@ -2,6 +2,20 @@
 I recently come through a situation where my friend wants to uninstall an app that blocks nudity content, 
 app : https://play.google.com/store/apps/details?id=com.blockerhero
 
+Turn on this Settings in Developer Mode:
+
+- **USB Debugging**
+    - Allows `adb shell`, install/uninstall, `dpm` commands, etc.
+- **Wireless Debugging**
+    - If you want to connect over Wi-Fi instead of USB.
+- **Install via USB** (MIUI setting)
+    - Lets you push APKs with `adb install` without extra prompts.
+- **USB Debugging (Security settings)**
+    - Prompts you to authorize your host computer for sensitive operations (you’ll need to confirm the RSA fingerprint).
+- **OEM Unlocking**
+    - Required if you ever want to unlock the bootloader to install a custom recovery or push your app as a system APK.
+    - **Warning:** unlocking the bootloader will wipe user data!
+
 # METHOD #1 - ADB
 
 Normal Uninstallation
